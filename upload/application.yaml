@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: file-loader
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      groupId: file-uploader-id
