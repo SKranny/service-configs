@@ -1,10 +1,10 @@
 server:
-  port: 8082
+  port: ${APP_PORT:8082}
 
 spring:
   application:
     name: file-processor
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${KAFKA_HOST:localhost:9092}
     consumer:
       groupId: file-processor-id

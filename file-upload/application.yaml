@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: ${APP_PORT:8080}
 
 spring:
   application:
     name: file-loader
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${KAFKA_HOST:localhost:9092}
     consumer:
       groupId: file-uploader-id
