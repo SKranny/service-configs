@@ -8,3 +8,4 @@ spring:
     bootstrap-servers: ${KAFKA_HOST:localhost:9092}
     consumer:
       groupId: file-uploader-id
+file-status-processor-url: ${FILE_STATUS_PROCESSOR_URL}
